@@ -1,2 +1,3 @@
-# nf-theme
-Neaform theme for sli.dev presentations
+# nearform-slidev-theme
+
+NearForm's presentation format for Slidev.
