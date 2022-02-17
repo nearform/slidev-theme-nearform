@@ -1,6 +1,6 @@
 {
-  "name": "slidev-theme",
-  "version": "0.0.1",
+  "name": "@nearform/slidev-theme",
+  "version": "1.0.0",
   "engines": {
     "node": ">=14.0.0",
     "slidev": ">=0.19.3"
@@ -12,7 +12,7 @@
   ],
   "license": "MIT",
   "slidev": {
-    "colorSchema": "both",
+    "colorSchema": "dark",
     "highlighter": "all",
     "defaults": {
       "fonts": {
