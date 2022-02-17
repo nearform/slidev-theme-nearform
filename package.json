@@ -1,5 +1,5 @@
 {
-  "name": "@nearform/slidev-theme",
+  "name": "@nearform/slidev-theme-nearform",
   "version": "1.0.1",
   "engines": {
     "node": ">=14.0.0",
@@ -24,9 +24,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nearform/slidev-theme"
+    "url": "https://github.com/nearform/slidev-theme-nearform"
   },
-  "bugs": "https://github.com/nearform/slidev-theme",
+  "bugs": "https://github.com/nearform/slidev-theme-nearform",
   "dependencies": {
     "@slidev/types": "^0.28.5",
     "codemirror-theme-vars": "^0.1.1",
