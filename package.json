@@ -28,7 +28,7 @@
   },
   "bugs": "https://github.com/nearform/slidev-theme",
   "dependencies": {
-    "@slidev/types": "^0.22.7",
+    "@slidev/types": "^0.28.5",
     "codemirror-theme-vars": "^0.1.1",
     "prism-theme-vars": "^0.2.2",
     "theme-vitesse": "^0.1.12"
