@@ -1,13 +1,23 @@
-:root {
-  --slidev-theme-primary: #fff !important;
-  --slidev-slide-container-background: #2165e3;
+html:root {
+  --nf-primary: #2165e3;
+  --nf-secondary: #fb7a9c;
+  --slidev-slide-container-background: var(--nf-primary);
+}
+
+.dark.slidev-layout, .dark .slidev-layout{
+  background-color: var(--nf-primary);
+  color: white;
+}
+
+.light.slidev-layout, html:not(.dark) #slide-content {
+  background-color: white;
+  color: var(--nf-primary);
 }
 
 .slidev-layout {
   text-align: left !important;
 
   h1 {
-    color: #fff;
     font-weight: 900;
     margin-bottom: 1em !important;
   }
@@ -19,7 +29,7 @@
   p + h2, ul + h2, table + h2 {
     @apply mt-10;
   }
-  
+
   h1 {
     @apply text-4xl mb-4 -ml-[0.05em];
   }
@@ -91,23 +101,13 @@
   }
 }
 
-
 .grid-cols-2 {
   grid-template-columns: 6fr 4fr !important;
 }
 
-.dark #slide-content {
-  --tw-bg-opacity: 1;
-  background-color: var(--slidev-slide-container-background);
-  --tw-text-opacity: 1;
-  color: #fff;
-}
-
 #slide-content p {
   line-height: 1.5em !important;
-  font-size: 1.0em !important;
-  color:  #fff !important;
-  opacity: 1.0 !important;
+  font-size: 1em !important;
 }
 
 li {
@@ -133,7 +133,7 @@ ol > li > ul > li {
 }
 */
 :not(pre) > code {
-  background: #fb7a9c !important;
+  background: var(--nf-secondary) !important;
 }
 
 :not(pre) > code:before, :not(pre) > code:after {
@@ -141,12 +141,12 @@ ol > li > ul > li {
 }
 
 strong {
-  color: #fb7a9c;
+  color: var(--nf-secondary);
   font-weight: 900 !important;
 }
 
 ::marker {
-  font-size:  1em;
+  font-size: 1em;
 }
 
 .logo {
@@ -160,7 +160,7 @@ strong {
 }
 
 .logo + h1 {
-  font-size:  3em !important;
+  font-size: 3em !important;
   margin-top: 2em;
   line-height: 3.5rem !important;
 }
@@ -172,10 +172,9 @@ strong {
   line-height: 1em;
   margin-bottom: 0 !important;
   margin-top: 0 !important;
-  font-size: 1.2em !important;  
+  font-size: 1.2em !important;
   line-height: 1.2em;
 }
-
 
 .copyright {
   position: absolute;
@@ -191,18 +190,18 @@ strong {
 }
 
 .big h2 {
-  font-size:  3em !important;
+  font-size: 3em !important;
   line-height: 1.1em !important;
 }
 
 .cover-bg {
   left: 0;
-  right:  0;
-  top:  0;
-  width:  100% !important;
-  z-index:  -1;
+  right: 0;
+  top: 0;
+  width: 100% !important;
+  z-index: -1;
   position: absolute;
-  display:  block;
+  display: block;
 }
 
 .huge {
@@ -223,10 +222,10 @@ strong {
 
 .two-columns {
   grid-template-columns: 50% 50%;
-  display:  grid;
+  display: grid;
 }
 
 .one-big-one-small-column {
   grid-template-columns: 60% 40%;
-  display:  grid;
+  display: grid;
 }

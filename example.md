@@ -1,6 +1,7 @@
 ---
 theme: ./
 layout: image-right
+colorSchema: dark
 background: /images/cover.png
 themeConfig:
   primary: '#4d7534'
@@ -24,6 +25,7 @@ Slide Subtitle
 
 ---
 layout: image-right
+class: light
 image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
@@ -39,6 +41,7 @@ Colons can be used to align columns.
 
 ---
 layout: section
+class: dark
 ---
 
 # Section Title
@@ -80,7 +83,7 @@ interface User {
 
 function updateUser(id: number, update: Partial<User>) {
   const user = getUser(id)
-  const newUser = {...user, ...update}  
+  const newUser = {...user, ...update}
   saveUser(id, newUser)
 }
 ```
