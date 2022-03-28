@@ -12,7 +12,7 @@
   ],
   "license": "MIT",
   "slidev": {
-    "colorSchema": "dark",
+    "colorSchema": "both",
     "highlighter": "all",
     "defaults": {
       "fonts": {
