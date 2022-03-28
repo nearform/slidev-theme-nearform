@@ -1,7 +1,6 @@
 ---
 theme: ./
 layout: image-right
-colorSchema: dark
 background: /images/cover.png
 themeConfig:
   primary: '#4d7534'
