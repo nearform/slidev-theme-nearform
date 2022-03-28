@@ -2,6 +2,8 @@ html:root {
   --nf-primary: #2165e3;
   --nf-secondary: #fb7a9c;
   --slidev-slide-container-background: var(--nf-primary);
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
 }
 
 .dark.slidev-layout, .dark .slidev-layout{
@@ -9,7 +11,7 @@ html:root {
   color: white;
 }
 
-.light.slidev-layout, html:not(.dark) #slide-content {
+.light.slidev-layout, html:not(.dark) .slidev-layout {
   background-color: white;
   color: var(--nf-primary);
 }
@@ -108,6 +110,7 @@ html:root {
 #slide-content p {
   line-height: 1.5em !important;
   font-size: 1em !important;
+  opacity: 1.0 !important;
 }
 
 li {
