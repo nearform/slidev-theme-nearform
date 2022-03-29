@@ -1,23 +1,26 @@
-html:root {
+:root {
   --nf-primary: #2165e3;
   --nf-secondary: #fb7a9c;
-  --slidev-slide-container-background: var(--nf-primary);
   --tw-bg-opacity: 1;
   --tw-text-opacity: 1;
 }
 
-.dark.slidev-layout, .dark .slidev-layout{
-  background-color: var(--nf-primary);
-  color: white;
+.light {
+  --slidev-slide-container-background: white;
+  --background-color: white;
+  --text-color: var(--nf-primary);
 }
 
-.light.slidev-layout, html:not(.dark) .slidev-layout {
-  background-color: white;
-  color: var(--nf-primary);
+.dark {
+  --slidev-slide-container-background: var(--nf-primary);
+  --background-color: var(--nf-primary);
+  --text-color: white;
 }
 
 .slidev-layout {
   text-align: left !important;
+  color: var(--text-color);
+  background-color: var(--background-color);
 
   h1 {
     font-weight: 900;
