@@ -12,9 +12,10 @@
   ],
   "license": "MIT",
   "slidev": {
-    "colorSchema": "dark",
+    "colorSchema": "both",
     "highlighter": "all",
     "defaults": {
+      "colorSchema": "dark",
       "fonts": {
         "mono": "PT Mono",
         "sans": "Poppins",
