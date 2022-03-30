@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-nearform",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "engines": {
     "node": ">=14.0.0",
     "slidev": ">=0.19.3"
