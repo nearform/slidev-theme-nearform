@@ -106,10 +106,6 @@
   }
 }
 
-.grid-cols-2 {
-  grid-template-columns: 6fr 4fr !important;
-}
-
 #slide-content p {
   line-height: 1.5em !important;
   font-size: 1em !important;
