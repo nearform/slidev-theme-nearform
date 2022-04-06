@@ -18,3 +18,9 @@ Steps to use this theme:
   theme: slidev-theme-nearform
   ---
   ```
+
+## Extra tips
+
+Although you shouldn't write "dense" slides, some times it can be difficult to
+avoid it. In such situations, you can apply the `dense` CSS class to your
+`<div>` containers, to ensure that they fit in the available vertical space.
