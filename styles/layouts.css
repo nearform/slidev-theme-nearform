@@ -122,6 +122,17 @@ li li {
   line-height: 1.8em !important;
   padding-bottom: 0.2em !important;
 }
+
+.dense li {
+  font-size: 1.0em !important;
+  line-height: 1.2em !important;
+  padding-bottom: 0.8em !important;
+}
+.dense li li {
+  font-size: 0.8em !important;
+  line-height: 1.2em !important;
+  padding-bottom: 0.2em !important;
+}
 /*:not(ol) > ul > li {
   font-size: 1.5em;
 }
