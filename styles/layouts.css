@@ -113,11 +113,22 @@
 }
 
 li {
+  font-size: 1.3em !important;
+  line-height: 1.8em !important;
+  padding-bottom: 1.2em !important;
+}
+li li {
+  font-size: 0.9em !important;
+  line-height: 1.8em !important;
+  padding-bottom: 0.2em !important;
+}
+
+.dense li {
   font-size: 1.0em !important;
   line-height: 1.2em !important;
   padding-bottom: 0.8em !important;
 }
-li li {
+.dense li li {
   font-size: 0.8em !important;
   line-height: 1.2em !important;
   padding-bottom: 0.2em !important;
