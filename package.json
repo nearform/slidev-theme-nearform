@@ -32,6 +32,6 @@
     "@slidev/types": "^0.40.2",
     "codemirror-theme-vars": "^0.1.1",
     "prism-theme-vars": "^0.2.2",
-    "theme-vitesse": "^0.6.0"
+    "theme-vitesse": "^0.7.2"
   }
 }
