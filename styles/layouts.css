@@ -163,12 +163,14 @@ strong {
 
 .logo {
   width: 200px !important;
+  @apply -ml-5;
 }
 
 .logo-bottom {
   width: 200px !important;
   position: absolute;
   bottom: 3em;
+  @apply -ml-5;
 }
 
 .logo + h1 {
