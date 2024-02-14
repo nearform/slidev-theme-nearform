@@ -11,6 +11,9 @@
     "slidev"
   ],
   "license": "MIT",
+  "scripts": {
+    "dev": "slidev example.md --open"
+  },
   "slidev": {
     "colorSchema": "both",
     "highlighter": "all",
@@ -18,8 +21,8 @@
       "colorSchema": "dark",
       "fonts": {
         "mono": "PT Mono",
-        "sans": "Poppins",
-        "serif": "Poppins"
+        "sans": "Inter",
+        "serif": "Bitter"
       }
     }
   },
@@ -29,9 +32,12 @@
   },
   "bugs": "https://github.com/nearform/slidev-theme-nearform",
   "dependencies": {
-    "@slidev/types": "^0.47.1",
+    "@slidev/types": "^0.47.5",
     "codemirror-theme-vars": "^0.1.1",
     "prism-theme-vars": "^0.2.2",
     "theme-vitesse": "^0.7.2"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^0.47.5"
   }
 }

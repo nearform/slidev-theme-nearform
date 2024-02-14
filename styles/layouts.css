@@ -1,6 +1,6 @@
 :root {
-  --nf-primary: #2165e3;
-  --nf-secondary: #fb7a9c;
+  --nf-primary: #000e38;
+  --nf-secondary: #03e5a4;
   --tw-bg-opacity: 1;
   --tw-text-opacity: 1;
 }
@@ -23,15 +23,22 @@
   background-color: var(--background-color);
 
   h1 {
-    font-weight: 900;
+    @apply font-600;
     margin-bottom: 1em !important;
+
+    &:after {
+      content: '_';
+      color: var(--nf-secondary);
+    }
   }
 
   h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
+    @apply -mt-2 mb-4;
   }
 
-  p + h2, ul + h2, table + h2 {
+  p + h2,
+  ul + h2,
+  table + h2 {
     @apply mt-10;
   }
 
@@ -56,11 +63,24 @@
   }
 
   h6 {
-    @apply text-sm pt-1 uppercase tracking-widest font-500 -ml-[0.05em];
+    @apply text-sm pt-1 uppercase tracking-widest font-400 -ml-[0.05em];
   }
 
   h6:not(.opacity-100) {
     @apply opacity-40;
+  }
+
+  li {
+    line-height: 1.2;
+    margin-bottom: 0.8em;
+  }
+  li li {
+    font-size: 0.8em;
+    margin-bottom: 0.2em;
+  }
+
+  p {
+    line-height: 1.2;
   }
 }
 
@@ -77,10 +97,14 @@
 .slidev-layout.fact {
   @apply text-center grid h-full;
   h1 {
-    @apply text-8xl font-700;
+    @apply text-8xl font-600;
+    &:after {
+      content: '';
+      display: none;
+    }
   }
   h1 + p {
-    @apply font-700 text-2xl;
+    @apply font-600 text-2xl;
   }
 }
 
@@ -88,13 +112,21 @@
   @apply text-center grid h-full;
 
   h1 {
-    @apply text-6xl font-700;
+    @apply text-6xl font-600;
   }
 }
 
 .slidev-layout.quote {
   @apply grid h-full;
 
+  h1 {
+    @apply font-serif;
+
+    &:after {
+      content: '';
+      display: none;
+    }
+  }
   h1 + p {
     @apply mt-2;
   }
@@ -102,54 +134,17 @@
 
 .slidev-layout.section {
   h1 {
-    @apply text-6xl font-500 leading-20;
+    @apply text-6xl font-600 leading-20;
   }
 }
 
-#slide-content p {
-  line-height: 1.5em !important;
-  font-size: 1em !important;
-  opacity: 1.0 !important;
-}
-
-li {
-  font-size: 1.3em !important;
-  line-height: 1.8em !important;
-  padding-bottom: 1.2em !important;
-}
-li li {
-  font-size: 0.9em !important;
-  line-height: 1.8em !important;
-  padding-bottom: 0.2em !important;
-}
-
-.dense li {
-  font-size: 1.0em !important;
-  line-height: 1.2em !important;
-  padding-bottom: 0.8em !important;
-}
-.dense li li {
-  font-size: 0.8em !important;
-  line-height: 1.2em !important;
-  padding-bottom: 0.2em !important;
-}
-/*:not(ol) > ul > li {
-  font-size: 1.5em;
-}
-
-ol > li, ul > li {
-  font-size: 1.5em !important;
-}
-
-ol > li > ul > li {
-  font-size: 1em !important;
-}
-*/
 :not(pre) > code {
   background: var(--nf-secondary) !important;
+  color: var(--nf-primary);
 }
 
-:not(pre) > code:before, :not(pre) > code:after {
+:not(pre) > code:before,
+:not(pre) > code:after {
   content: '' !important;
 }
 
@@ -164,12 +159,14 @@ strong {
 
 .logo {
   width: 200px !important;
+  @apply -ml-5;
 }
 
 .logo-bottom {
   width: 200px !important;
   position: absolute;
   bottom: 3em;
+  @apply -ml-5;
 }
 
 .logo + h1 {
