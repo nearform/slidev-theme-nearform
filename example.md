@@ -1,14 +1,21 @@
 ---
 theme: ./
-layout: image-right
-background: /images/cover.png
-themeConfig:
-  primary: '#4d7534'
+layout: cover
+background: 'https://source.unsplash.com/collection/94734566/1920x1080'
 ---
 
-# Presentation title
+# Presentation Title
 
-Presentation subtitle
+@Author
+
+---
+layout: image-right
+image: https://source.unsplash.com/collection/94734566/1920x1080
+---
+
+# Slide Title
+
+Slide Subtitle
 
 ---
 
