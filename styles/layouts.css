@@ -26,10 +26,6 @@
     @apply font-600;
     margin-bottom: 1em !important;
 
-    &:only-child {
-      margin-bottom: 0 !important;
-    }
-
     &:after {
       content: '_';
       color: var(--nf-secondary);
