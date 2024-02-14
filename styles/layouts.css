@@ -31,7 +31,7 @@
     }
 
     &:after {
-      content: "_";
+      content: '_';
       color: var(--nf-secondary);
     }
   }
@@ -90,7 +90,7 @@
   h1 {
     @apply text-8xl font-600;
     &:after {
-      content: "";
+      content: '';
       display: none;
     }
   }
@@ -114,7 +114,7 @@
     @apply font-serif;
 
     &:after {
-      content: "";
+      content: '';
       display: none;
     }
   }
@@ -136,7 +136,7 @@
 
 :not(pre) > code:before,
 :not(pre) > code:after {
-  content: "" !important;
+  content: '' !important;
 }
 
 strong {
