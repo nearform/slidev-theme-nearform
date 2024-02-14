@@ -73,6 +73,19 @@
   h6:not(.opacity-100) {
     @apply opacity-40;
   }
+
+  li {
+    line-height: 1.2;
+    margin-bottom: 0.8em;
+  }
+  li li {
+    font-size: 0.8em;
+    margin-bottom: 0.2em;
+  }
+
+  p {
+    line-height: 1.2;
+  }
 }
 
 .slidev-layout.cover,
