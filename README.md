@@ -1,4 +1,4 @@
-# NearForm Slidev Theme
+# Nearform Slidev Theme
 
 This repository contains the slidev theme for Nearform presentations and workshops.
 
