@@ -32,7 +32,7 @@
   },
   "bugs": "https://github.com/nearform/slidev-theme-nearform",
   "dependencies": {
-    "@slidev/types": "^51.0.1",
+    "@slidev/types": "^52.0.0",
     "codemirror-theme-vars": "^0.1.1",
     "prism-theme-vars": "^0.2.2",
     "theme-vitesse": "^0.8.0"
