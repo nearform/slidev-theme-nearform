@@ -1,7 +1,7 @@
 import { resolve } from 'path'
-import { defineWindiSetup } from '@slidev/types'
+import { defineUnoSetup } from '@slidev/types'
 
-export default defineWindiSetup(() => ({
+export default defineUnoSetup(() => ({
   extract: {
     include: [
       resolve(__dirname, '**/*.vue'),
