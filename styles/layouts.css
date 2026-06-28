@@ -5,12 +5,14 @@
   --tw-text-opacity: 1;
 }
 
+html.light,
 .light {
   --slidev-slide-container-background: white;
   --background-color: white;
   --text-color: var(--nf-primary);
 }
 
+html.dark,
 .dark {
   --slidev-slide-container-background: var(--nf-primary);
   --background-color: var(--nf-primary);
