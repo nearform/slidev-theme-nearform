@@ -18,6 +18,34 @@ Steps to use this theme:
   ---
   ```
 
+# Light mode
+
+The theme ships with a light palette matching the NearForm Master Base template
+(white background, dark primary text). Switch the deck to light mode by setting
+`colorSchema` in the headmatter:
+
+```md
+---
+theme: slidev-theme-nearform
+colorSchema: light
+---
+```
+
+Or pin it in the deck's `package.json` so every contributor gets the same
+default:
+
+```json
+{
+  "slidev": {
+    "colorSchema": "light"
+  }
+}
+```
+
+Valid values are `light`, `dark`, `both`, and `auto`. Per-slide overrides
+remain available through the existing `class: light` and `class: dark`
+frontmatter keys.
+
 ## Extra tips
 
 ### Intro slide
