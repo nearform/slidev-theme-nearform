@@ -38,6 +38,6 @@
     "theme-vitesse": "^1.0.0"
   },
   "devDependencies": {
-    "@slidev/cli": "^52.16.0"
+    "@slidev/cli": "^53.0.0"
   }
 }
